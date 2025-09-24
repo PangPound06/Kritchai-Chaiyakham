@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .pdf-container {
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #1a252f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>James Kritchai</h1>
+    <p>Full-stack Developer | Data Engineer | AI Enthusiast</p>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate developer with experience in web development,
+        data engineering, and AI/ML. I enjoy building scalable systems,
+        solving challenging problems, and working with modern technologies.
+      </p>
+    </section>
+
+    <!-- Resume PDF Section -->
+    <section>
+      <h2>Resume (PDF)</h2>
+      <div class="pdf-container">
+        <!-- ใส่ไฟล์ resume.pdf ไว้ในโฟลเดอร์เดียวกับ HTML -->
+        <iframe src="resume.pdf"></iframe>
+        <br>
+        <a href="สีแดง ประวัติส่วนตัว ทางการ ทันสมัย เรซูเม่.pdf" class="download-btn" download>Download PDF</a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
